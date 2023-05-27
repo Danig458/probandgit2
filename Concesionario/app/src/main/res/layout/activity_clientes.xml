@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ClientesActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:text="Clientes" />
+
+    <EditText
+        android:id="@+id/etidentificacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:hint="Digite identificacion"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:hint="Digite nombre"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etcorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:hint="Digite correo"
+        android:inputType="textEmailAddress" />
+
+    <CheckBox
+        android:id="@+id/cbactivo"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="35dp"
+        android:text="Activo" />
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btguardar"
+            android:layout_width="174dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Guardar"
+            android:textSize="25dp"
+            android:onClick="Guardar"
+            android:backgroundTint="#204412"/>
+
+        <Button
+            android:id="@+id/btconsultar"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:text="Consultar"
+            android:backgroundTint="#2C2CB6"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btanular"
+            android:layout_width="174dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Anular"
+            android:textSize="25dp"
+            android:backgroundTint="#EEE40F"/>
+
+        <Button
+            android:id="@+id/btcancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:text="Cancelar"
+            android:backgroundTint="#EE240F"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/btregresar"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textSize="25dp"
+        android:layout_weight="1"
+        android:text="Regresar"
+        android:backgroundTint="#8CFF03"/>
+    </LinearLayout>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
